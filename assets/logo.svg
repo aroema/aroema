@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255.25 255.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #c75034;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #c75034;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 157.51px;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(45.96 178.23) scale(1.66 1)"><tspan x="0" y="0">A</tspan></text>
+  <rect class="cls-1" x=".5" y=".5" width="254.25" height="254.25"/>
+</svg>

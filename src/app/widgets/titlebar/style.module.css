@@ -1,0 +1,39 @@
+
+.titleBar {
+    display: flex;
+    flex-direction: row;
+    -webkit-app-region: drag;
+    height: 30px;
+}
+
+.logo {
+    width: 24px;
+    height: 24px;
+}
+
+.titleBarLeft,
+.titleBarCenter,
+.titleBarRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titleBarLeft {
+    width: 30%;
+    justify-content: flex-start;
+}
+
+.titleBarCenter {
+    width: 40%;
+    justify-content: center;
+}
+
+.titleBarRight {
+    width: 30%;
+    justify-content: flex-end;
+}
+
+.titleBarOverlay{
+    width: 138px;
+}

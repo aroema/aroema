@@ -1,0 +1,31 @@
+
+.container{
+    flex-grow: 1;
+    display: flex;
+}
+
+.vertical{
+    flex-direction: column;
+    height: 100%;
+}
+
+.vertical > * {
+    border-bottom: 1px solid var(--separator-border-color);
+}
+
+.vertical > *:last-child {
+    border-bottom: none;
+}
+
+.horizontal{
+    flex-direction: row;
+    width: 100%;
+}
+
+.horizontal > * {
+    border-right: 1px solid var(--separator-border-color);
+}
+
+.horizontal > *:last-child {
+    border-right: none;
+}
