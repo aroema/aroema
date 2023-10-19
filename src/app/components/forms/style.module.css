@@ -1,0 +1,34 @@
+
+.inputGroup{
+    display: flex;
+    flex-direction: row;
+    margin: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.button, .input, .select{
+    border: none;
+    color: var(--border-text-color);
+    outline: none;
+    padding: 8px;
+    background-color: var(--secondary-background-color);
+    border-right: 1px solid var(--border-color);
+}
+
+.button:last-child, .input:last-child, .select:last-child{
+    border-right: none;
+}
+
+.button {
+    padding-left: 16px;
+    padding-right: 16px;
+    cursor: pointer;
+}
+
+.button.primary{
+    background-color: var(--primary-color);
+    color: var(--secondary-background-color);
+    font-weight: bold;
+}

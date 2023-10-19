@@ -1,23 +1,44 @@
 import './theme.css';
-import HorizontalContainer from './components/container/HorizontalContainer';
-import VerticalContainer from './components/container/VerticalContainer';
 import TitleBar from "./widgets/titlebar/TitleBar";
 import StatusBar from './widgets/statusbar/StatusBar';
 import style from './style.module.css'
 import PrimaryBar from './widgets/primarybar/PrimaryBar';
-import EmptyEditor from './widgets/editor/empty/EmptyEditor';
+import RequestEditor from './widgets/editor/request/RequestEditor';
+import Container from './components/container/Container';
+import { Request } from './entity/Request';
+import { useState } from 'react';
 
 export default function App() {
+  const requestObj: Request = {
+    url: 'https://www.example.com',
+    method: 'GET',
+    headers: [],
+    query: [{
+        key: 'key',
+        value: 'value'
+      },
+      {
+        key: 'key2',
+        value: 'value2'
+    }],
+  }
+  const [request, setRequest] = useState<Request>(requestObj)
+
+  function updateRequest(value: Request | ((request: Request) => Request)) {
+    setRequest(value)
+  }
+
   return (
     <div className={style.app}>
-      <VerticalContainer>
+      <Container vertical>
         <TitleBar />
-        <HorizontalContainer>
+        <Container className={style.editor}>
           <PrimaryBar />
-          <EmptyEditor />
-        </HorizontalContainer>
+          <RequestEditor request={request} setRequest={updateRequest} />
+          <PrimaryBar />
+        </Container>
         <StatusBar />
-      </VerticalContainer>
+      </Container>
     </div>
   );
 }

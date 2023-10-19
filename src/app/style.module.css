@@ -4,3 +4,7 @@
     width: 100vw;
     overflow: hidden;
 }
+
+.editor{
+    flex-grow: 1;
+}

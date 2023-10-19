@@ -1,7 +1,7 @@
 
 .container{
-    flex-grow: 1;
     display: flex;
+    box-sizing: border-box;
 }
 
 .vertical{
@@ -10,10 +10,10 @@
 }
 
 .vertical > * {
-    border-bottom: 1px solid var(--separator-border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
-.vertical > *:last-child {
+.vertical:not(.bordered) > *:last-child {
     border-bottom: none;
 }
 
@@ -23,9 +23,9 @@
 }
 
 .horizontal > * {
-    border-right: 1px solid var(--separator-border-color);
+    border-right: 1px solid var(--border-color);
 }
 
-.horizontal > *:last-child {
+.horizontal:not(.bordered) > *:last-child {
     border-right: none;
 }

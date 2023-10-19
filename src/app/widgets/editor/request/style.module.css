@@ -1,0 +1,9 @@
+
+.requestContainer{
+    flex-grow: 1;
+    background-color: var(--primary-background-color);
+}
+
+.grow{
+    flex-grow: 1;
+}

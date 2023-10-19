@@ -1,0 +1,16 @@
+.tabContainer{
+    width: 100%;
+}
+
+.table{
+    border: 1px solid var(--border-color);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table th,
+.table td {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    text-align: left;
+}
